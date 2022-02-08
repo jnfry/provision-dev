@@ -3,7 +3,7 @@ set -eux
 
 # Setup homebrew, your main package manager
 echo 'Installing Homebrew...'
-#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/main/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/main/install)"
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/fry/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
