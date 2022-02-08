@@ -5,9 +5,8 @@ set -eux
 echo 'Installing Homebrew...'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/main/install)"
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/fry/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/fry/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
 
 echo 'Running brew update...'
 brew update
