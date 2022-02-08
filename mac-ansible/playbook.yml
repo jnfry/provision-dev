@@ -9,6 +9,7 @@
                 - tmux
                 - htop
                 - terraform
+                - jq
                 - yarn
                 - hub
                 - make
