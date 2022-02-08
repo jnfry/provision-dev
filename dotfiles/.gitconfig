@@ -4,7 +4,7 @@
 	email = jnfry@outlook.com
 [alias]
     lg = log --graph --oneline --all
-    purge = "!git branch -vv | grep \\:\\ gone | grep -v '\\*' | cut -c 3- | cut -d \\  -f 1 | grep -v 'master'"
+    purge = "!git branch -vv | grep \\:\\ gone | grep -v '\\*' | cut -c 3- | cut -d \\  -f 1 | grep -v 'main'"
     purgef = "!git purge | xargs -n 1 git branch -D"	
     pl = pull --prune --ff-only
     co = checkout
