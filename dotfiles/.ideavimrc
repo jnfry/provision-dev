@@ -1,0 +1,32 @@
+""" Map leader to space ---------------------
+let mapleader=";"
+
+""" Plugins  --------------------------------
+set surround
+set NERDTree
+
+""" Common settings -------------------------
+set scrolloff=10
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set relativenumber
+set number
+set showcmd
+
+""" Idea specific settings ------------------
+set ideajoin
+set idearefactormode=visual
+
+""" Mappings --------------------------------
+map <leader>r <Action>(RenameElement)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>p <Action>(ToggleLineBreakpoint)
+
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+nmap <silent> <leader>/ :nohlsearch<CR>
