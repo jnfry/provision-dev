@@ -10,9 +10,9 @@ set -eux
 echo 'Installing Xcode Command Line Tools...'
 softwareupdate --all --install --force
 
-mkdir -p ~/src/tomtomau/
+mkdir -p ~/src/jnfry/
 
-git clone https://github.com/tomtomau/provision-dev.git ~/src/tomtomau/provision-dev
+git clone https://github.com/jnfry/provision-dev.git ~/src/jnfry/provision-dev
 
-cd ~/src/tomtomau/provision-dev/
+cd ~/src/jnfry/provision-dev/
 bash ./install.sh

@@ -5,7 +5,7 @@ set -eux
 echo 'Installing Homebrew...'
 #ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tom/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/fry/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
@@ -15,7 +15,7 @@ brew update
 brew install ansible
 
 git remote remove origin
-git remote add origin git@github.com:tomtomau/provision-dev.git
+git remote add origin git@github.com:jnfry/provision-dev.git
 
 cd mac-ansible
 make install

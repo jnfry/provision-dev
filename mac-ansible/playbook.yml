@@ -1,5 +1,5 @@
 ---
-# setup my macbook just the way I like it
+# macbook setup
 
 -   hosts: mac
     roles:
@@ -9,29 +9,24 @@
                 - tmux
                 - htop
                 - terraform
-                - php@7.2
-                - jq
                 - yarn
                 - hub
-		- make
-		- qemu
-		# Coreutils adds realpath among other things
-		- coreutils
-		- docker-credential-helper-ecr
+                - make
+                # Coreutils adds realpath among other things
+                - coreutils
+                - docker-credential-helper-ecr
                 - zsh
                 - zsh-completions
             casks:
-                - balenaetcher
-                - discord
                 - google-chrome
                 - jetbrains-toolbox
-		- pop
-                - sketch
+                - pop
+                - discord
                 - slack
                 - spectacle
                 - spotify
-		- docker
-		- docker-compose
+                - docker
+                - docker-compose
                 - zoom
 
         -   role: ssh-keys
@@ -40,7 +35,7 @@
             rcm_user: "{{ lookup('env', 'USER') }}"
             rcup_bin: /usr/local/bin/rcup
             rcm_repos:
-                -   repo: 'git@github.com:tomtomau/dotfiles.git'
+                -   repo: 'git@github.com:jnfry/dotfiles.git'
                     dest: "{{ lookup('env', 'HOME') }}/.dotfiles/"
         -   role: use-zsh
         -   role: suzuki-shunsuke.nvm

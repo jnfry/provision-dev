@@ -1,17 +1,17 @@
-- name: Make zsh the default shell
-  become: true
-  user:
-      name: "{{ ansible_user }}"
-      shell: /opt/homebrew/bin/zsh
+-   name: Make zsh the default shell
+    become: true
+    user:
+        name: "{{ ansible_user }}"
+        shell: /opt/homebrew/bin/zsh
 
-- name: check if oh-my-zsh is installed
-  command: test -d ~/.oh-my-zsh
-  ignore_errors: true
-  register: zsh_installed
+-   name: check if oh-my-zsh is installed
+    command: test -d ~/.oh-my-zsh
+    ignore_errors: true
+    register: zsh_installed
 
-- name: Cloning  oh-my-zsh
-  git:
-      repo=https://github.com/robbyrussell/oh-my-zsh
-      dest=~/.oh-my-zsh
-  when: zsh_installed is failed
-  register: cloning
+-   name: Cloning  oh-my-zsh
+    git:
+        repo=https://github.com/robbyrussell/oh-my-zsh
+        dest=~/.oh-my-zsh
+    when: zsh_installed is failed
+    register: cloning
