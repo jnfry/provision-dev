@@ -19,16 +19,16 @@
                 - zsh
                 - zsh-completions
             casks:
-                - google-chrome
                 - jetbrains-toolbox
+                - google-chrome
                 - pop
+                - spotify
                 - discord
                 - slack
                 - spectacle
-                - spotify
                 - docker
-                - docker-compose
                 - zoom
+                - loom
 
         -   role: ssh-keys
             github_key_title: "mbp.14-inch-retina-2021"
