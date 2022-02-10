@@ -18,6 +18,7 @@
                 - docker-credential-helper-ecr
                 - zsh
                 - zsh-completions
+                - nvm
             casks:
                 - jetbrains-toolbox
                 - google-chrome
